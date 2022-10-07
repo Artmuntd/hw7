@@ -47,6 +47,48 @@ public class Main {
             sumPerson = (sumPerson+ part)*(1+percent);
             System.out.println("Месяц " + i + " сумма накопления равна " + sumPerson + " рублей");
         }
+        // циклы часть 2
+        // дз1
+        int partMoney = 15_000;
+        int sumPerson1 = 0;
+        int i = 0;
+        while (sumPerson1 < 2_459_000) {
+            i++;
+            sumPerson1 = sumPerson1 + sumPerson1/100;
+            sumPerson1 = sumPerson1 + partMoney;
+            System.out.println("Месяц " + i + " Итого "+ sumPerson1);
+        }
+        // дз2
+        int num = 0;
+        int a = 10;
+        while (num<10){
+            num ++;
+            System.out.println(num +" ");
+
+        }
+
+        for (; a>= 1; a--){
+            System.out.println(a+" ");
+
+        }
+        // дз3
+       int population = 12_000_000;
+        int fertility = 84_000;
+       int y = 0;
+       for(; y<=10; y++){
+           population = population+fertility;
+           System.out.println("Год " + y + " численость населения составляет " + population);
+       }
+      // дз4
+        int vasilySum = 15_000;
+       double percen = 0.07;
+       double sumAll = 0;
+       int m = 0;
+       while ( sumAll <= 12_000_000){
+           m++;
+           sumAll =(sumAll + vasilySum)*(1+percen);
+           System.out.println("Месяц " + m + " сумма накопления " + sumAll);
+       }
 
     }
 }
