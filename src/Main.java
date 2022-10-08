@@ -80,7 +80,7 @@ public class Main {
            population = population+fertility;
            System.out.println("Год " + y + " численость населения составляет " + population);
        }
-      // дз3-4
+      // дз1-2
         int vasilySum = 15_000;
 
        int m = 1;
