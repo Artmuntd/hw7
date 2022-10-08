@@ -48,6 +48,7 @@ public class Main {
             System.out.println("Месяц " + i + " сумма накопления равна " + sumPerson + " рублей");
         }
         // циклы часть 2
+        // домашнее задание 1
         // дз1
         int partMoney = 15_000;
         int sumPerson1 = 0;
@@ -66,12 +67,12 @@ public class Main {
             System.out.print(num +" ");
 
         }
-        System.out.println(" ");
+        System.out.println("\n");
         for (; a>= 1; a--){
             System.out.print(a+" ");
 
         }
-
+        System.out.println("\n");
         // дз3
        int population = 12_000_000;
         int fertility = 84_000;
@@ -80,7 +81,8 @@ public class Main {
            population = population+fertility;
            System.out.println("Год " + y + " численость населения составляет " + population);
        }
-      // дз1-2
+        // домашнее задание 2
+      // задача 2
         int vasilySum = 15_000;
 
        int m = 1;
@@ -91,6 +93,47 @@ public class Main {
                 System.out.println("Месяц " + m + " сумма накопления " + vasilySum);
             }
        }
+        // задча 1
 
-    }
-}
+        int vasilySum3 = 15_000;
+
+        int m3 = 1;
+        while ( vasilySum3 < 12_000_000){
+            m3++;
+            vasilySum3 = (vasilySum3 * 7 /100) + vasilySum3;
+
+                System.out.println("Месяц " + m3 + " сумма накопления " + vasilySum3);
+
+        }
+
+        // задача 3
+        int m2 =1;
+       int vasilySum1= 15_000;
+        while( m2 < 108){
+            m2++;
+            vasilySum1 = (vasilySum1 * 7 /100) + vasilySum1;
+            if (m2 % 6 ==0) {
+                System.out.println("Месяц " + m2 + " сумма накопления " + vasilySum1);
+            }
+        }
+         // задача 4
+          int friday = 7;
+           int day= 1;
+          for(; day<31; ) {;
+               day++;
+             if(day % 7 == 0){
+                 System.out.println("пятница");
+             }
+
+          }
+        // домашнее задание 3 задача 1
+          int A =2;
+          int B =1;
+          for(; B<=10;B++){
+              System.out.println(A +" * "+ B +" = " + A*B);
+          }
+         }
+
+        }
+
+
