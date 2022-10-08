@@ -63,14 +63,15 @@ public class Main {
         int a = 10;
         while (num<10){
             num ++;
-            System.out.println(num +" ");
+            System.out.print(num +" ");
 
         }
-
+        System.out.println(" ");
         for (; a>= 1; a--){
-            System.out.println(a+" ");
+            System.out.print(a+" ");
 
         }
+
         // дз3
        int population = 12_000_000;
         int fertility = 84_000;
@@ -79,15 +80,16 @@ public class Main {
            population = population+fertility;
            System.out.println("Год " + y + " численость населения составляет " + population);
        }
-      // дз4
+      // дз3-4
         int vasilySum = 15_000;
-       double percen = 0.07;
-       double sumAll = 0;
-       int m = 0;
-       while ( sumAll <= 12_000_000){
+
+       int m = 1;
+       while ( vasilySum < 12_000_000){
            m++;
-           sumAll =(sumAll + vasilySum)*(1+percen);
-           System.out.println("Месяц " + m + " сумма накопления " + sumAll);
+           vasilySum = (vasilySum * 7 /100) + vasilySum;
+            if (m % 6 ==0) {
+                System.out.println("Месяц " + m + " сумма накопления " + vasilySum);
+            }
        }
 
     }
